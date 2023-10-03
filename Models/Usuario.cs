@@ -1,13 +1,13 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-namespace TP9-LoginRegistrousandoMVCJavaScript.Models;
+namespace TP9_LoginRegistrousandoMVCJavaScript.Models;
 
-public static class Usuario
+public class Usuario
 {
-    public static string UserName{get;set;};
-    private static string Contrasena{get;set;};
-    private static string Nombre{get;set;};
-    private static string Email{get;set;};
-    private static int Telefono{get;set;};
-    private static int idUsuario{get;set;};
+    public string UserName{get;set;}
+    public string Contrasena{get;set;}
+    public string Nombre{get;set;}
+    public string Email{get;set;}
+    public int Telefono{get;set;}
+    public int idUsuario{get;set;}
 }

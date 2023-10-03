@@ -2,18 +2,18 @@ using System.Collections.Generic;
 using System;
 using System.Data.SqlClient;
 using Dapper;
-namespace TP9-LoginRegistrousandoMVCJavaScript.Models;
+namespace TP9_LoginRegistrousandoMVCJavaScript.Models;
 
 public static class BD
 {
     private static string ConnectionString = @"Server=localhost; DataBase=BaseDeDatos; Trusted_Connection=True";
 
-    public static void Registro(string UserName,string Contrasena,string Nombre,string Email,int Telefono)
+    public static void Registro(Usuario usuario)
     {
-        string sql = "INSERT INTO Usuario (UserName,Contrasena,Nombre,Email,Telefono) VALUES ("+UserName+", "+Contrasena+", "+Nombre+", "+Email+","+Telefono");";
+        string sql = "INSERT INTO Usuario (UserName,Contrasena,Nombre,Email,Telefono) VALUES (@username, @contrasena, @nombre, @email, @tel)";
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-            db.INSERT<Usuario>(sql);
+            db.Execute(sql, new{Username = usuario.UserName, contrasena = usuario.Contrasena ,nombre = usuario.Nombre, email = usuario.Email ,tel = usuario.Telefono});
         }
     }
 
@@ -42,7 +42,7 @@ public static class BD
         //devuelve o un objeto del tipo usuario o null
     }
 
-    }
+}
 
 
 
