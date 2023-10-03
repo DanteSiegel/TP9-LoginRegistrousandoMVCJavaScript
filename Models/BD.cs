@@ -10,7 +10,7 @@ public static class BD
 
     public static void Registro(string UserName,string Contrasena,string Nombre,string Email,int Telefono)
     {
-        string sql = "INSERT INTO Usuario (UserName,Contrasena,Nombre,Email,Telefono) VALUES ("UserName", "Contrasena", "Nombre", "Email","Telefono");";
+        string sql = "INSERT INTO Usuario (UserName,Contrasena,Nombre,Email,Telefono) VALUES ("+UserName+", "+Contrasena+", "+Nombre+", "+Email+","+Telefono");";
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
             db.INSERT<Usuario>(sql);
@@ -28,16 +28,16 @@ public static class BD
         return Valido;
     }
 
-        public static bool ValidarLogIn(string UserName,string Contrasena)
+        public static Usuario ValidarLogIn(string UserName,string Contrasena)
     {
          Usuario User = new Usuario();
-        string sql = "Select * from Usuario where UserName = "UserName" and Contrasena = "Contrasena";";
+        string sql = "Select * from Usuario where UserName = "+ UserName +" and Contrasena = " + Contrasena +";";
         
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
             User = db.Query<Usuario>(sql);
         }
-        return Valido;
+        return User;
 
         //devuelve o un objeto del tipo usuario o null
     }
