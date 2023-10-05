@@ -24,14 +24,9 @@ public static class BD
         bool Valido=false;
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-<<<<<<< HEAD
-            int Count = db.Query<Usuario>(sql);
-            Valido = Count = 0;
-=======
                 
                 int Count = db.Query<Usuario>(sql).AsEnumerable().Count();
                 Valido = Count == 0;
->>>>>>> 207ea6ada4624a7f11b32ca0a7de6cf922bd8fd6
         }
         return Valido;
     }
