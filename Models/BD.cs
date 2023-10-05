@@ -19,12 +19,14 @@ public static class BD
 
         public static bool ValidarRegistro(string UserName)
     {
-        string sql = "Select Count("+UserName+") from Usuario";
+
+        string sql = "Select * from Usuario where UserName = "+UserName+" group by Username";
+        bool Valido=false;
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
                 
-                int Count = db.Query<Usuario>(sql);
-                bool Valido = Count == 0;
+                int Count = db.Query<Usuario>(sql).AsEnumerable().Count();
+                Valido = Count == 0;
         }
         return Valido;
     }
@@ -36,7 +38,7 @@ public static class BD
         
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-            User = db.Query<Usuario>(sql);
+            User = db.QueryFirst<Usuario>(sql);
         }
         return User;
 
