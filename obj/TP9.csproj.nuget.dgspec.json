@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj": {}
+    "C:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj": {}
   },
   "projects": {
-    "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj": {
+    "C:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj",
+        "projectUniqueName": "C:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj",
         "projectName": "TP9",
-        "projectPath": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj",
-        "packagesPath": "C:\\Users\\47963062\\.nuget\\packages\\",
-        "outputPath": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\obj\\",
+        "projectPath": "C:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\TP9.csproj",
+        "packagesPath": "C:\\Users\\47349708\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\47963062\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\47349708\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
