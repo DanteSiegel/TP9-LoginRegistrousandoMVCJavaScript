@@ -18650,36 +18650,7 @@
       "FileKind": "mvc"
     },
     {
-<<<<<<< HEAD
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\IniciarSesion.cshtml",
-      "TargetPath": "Views\\Home\\IniciarSesion.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Privacy.cshtml",
-=======
       "FilePath": "c:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Privacy.cshtml",
->>>>>>> 207ea6ada4624a7f11b32ca0a7de6cf922bd8fd6
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
@@ -18691,6 +18662,16 @@
     {
       "FilePath": "c:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\IniciarSesion.cshtml",
+      "TargetPath": "Views\\Home\\IniciarSesion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Registro.cshtml",
+      "TargetPath": "Views\\Home\\Registro.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18706,11 +18687,6 @@
     {
       "FilePath": "c:\\Users\\47349708\\Downloads\\a\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Registro.cshtml",
-      "TargetPath": "Views\\Home\\Registro.cshtml",
       "FileKind": "mvc"
     }
   ],

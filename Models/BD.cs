@@ -20,18 +20,13 @@ public static class BD
         public static bool ValidarRegistro(string UserName)
     {
 
-        string sql = "Select * from Usuario where UserName = "+UserName+" group by Username";
+        string sql = "Select * from Usuario where UserName = "+UserName+"";
         bool Valido=false;
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-<<<<<<< HEAD
-            int Count = db.Query<Usuario>(sql);
-            Valido = Count = 0;
-=======
                 
                 int Count = db.Query<Usuario>(sql).AsEnumerable().Count();
                 Valido = Count == 0;
->>>>>>> 207ea6ada4624a7f11b32ca0a7de6cf922bd8fd6
         }
         return Valido;
     }
@@ -48,6 +43,21 @@ public static class BD
         return User;
 
         //devuelve o un objeto del tipo usuario o null
+    }
+
+            public static Usuario ObtenerContraseña(string UserName)
+    {
+
+        string sql = "Select * from Usuario where UserName = "+UserName+" ";
+        Usuario User = new Usuario();
+
+        using(SqlConnection db = new SqlConnection(ConnectionString))
+        {
+                
+            User = db.QueryFirst<Usuario>(sql);
+
+        }
+        return User;
     }
 
 }
