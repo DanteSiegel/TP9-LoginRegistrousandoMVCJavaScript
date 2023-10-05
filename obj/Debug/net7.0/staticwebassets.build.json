@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9DJBKhmpHjIGpe7B7rGA+Wk4Bq3f1jg3ZE9GM85pMTc=",
+  "Hash": "H2cc9u5R1VRR2LQw68XXB8RljgWN5YrSuxA9MzqCJJw=",
   "Source": "TP9",
   "BasePath": "_content/TP9",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP9.bundle.scp.css"
     },
     {
-      "Identity": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\bd\\bd.sql",
+      "Identity": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\bd\\BD2.sql",
       "SourceId": "TP9",
       "SourceType": "Discovered",
       "ContentRoot": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\",
       "BasePath": "_content/TP9",
-      "RelativePath": "bd/bd.sql",
+      "RelativePath": "bd/BD2.sql",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\bd\\bd.sql"
+      "OriginalItemSpec": "wwwroot\\bd\\BD2.sql"
     },
     {
       "Identity": "Z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\css\\site.css",

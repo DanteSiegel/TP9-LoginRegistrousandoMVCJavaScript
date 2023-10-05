@@ -58,5 +58,19 @@ public class HomeController : Controller
             return RedirectToAction("IniciarSesion");
         }
     
-}
+    [HttpPost]
+        public IActionResult ForgotPassword(string UserName)
+        {
+            Usuario user = BD.ObtenerContraseña(UserName);
 
+            if (user != null)
+            {
+                ViewBag.Contraseña = user.Contrasena;
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View("ForgotPassword", new { Error = "El nombre de usuario no está registrado." });
+            }
+        }
+}
