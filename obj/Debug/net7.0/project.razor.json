@@ -18655,6 +18655,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\IniciarSesion.cshtml",
+      "TargetPath": "Views\\Home\\IniciarSesion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -18677,6 +18682,11 @@
     {
       "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "z:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\Views\\Home\\Registro.cshtml",
+      "TargetPath": "Views\\Home\\Registro.cshtml",
       "FileKind": "mvc"
     }
   ],
