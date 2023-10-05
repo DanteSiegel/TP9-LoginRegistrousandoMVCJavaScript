@@ -19,11 +19,12 @@ public static class BD
 
         public static bool ValidarRegistro(string UserName)
     {
-        string sql = "Select Count("UserName") from Usuario";
+        string sql = "Select Count("+UserName+") from Usuario";
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-            int Count = db.Query<Usuario>(sql);
-            Valido = Count = 0;
+                
+                int Count = db.Query<Usuario>(sql);
+                bool Valido = Count == 0;
         }
         return Valido;
     }
