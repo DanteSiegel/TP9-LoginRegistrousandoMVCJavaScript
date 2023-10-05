@@ -23,6 +23,11 @@ public class HomeController : Controller
             return View();
         }
 
+                        public IActionResult OlvideContraseña()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult Login(string UserName, string Password)
         {
