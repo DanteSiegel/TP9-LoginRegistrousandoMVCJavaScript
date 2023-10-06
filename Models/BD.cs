@@ -38,7 +38,7 @@ public static class BD
         
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-            User = db.QueryFirst<Usuario>(sql);
+            User = db.QueryFirst<Usuario>(sql);//aca
         }
         return User;
 

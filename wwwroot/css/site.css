@@ -21,6 +21,11 @@ body {
   margin-bottom: 60px;
   background-color: #667;
 }
+.container-form
+{
+  display: flex;
+  justify-content: center;
+}
 
 .form-container {
   background: linear-gradient(#212121, #212121) padding-box,
