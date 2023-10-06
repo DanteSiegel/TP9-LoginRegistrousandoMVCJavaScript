@@ -6,26 +6,15 @@ namespace TP9.Controllers;
 
 public class Account : Controller
 {
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Registro()
-    {
-        return View();
-    }
-
     public IActionResult IniciarSesion()
     {
         return View();
     }
-
-    public IActionResult OlvideContraseña()
+    public IActionResult Registrarse()
     {
-        return View();
+        return View("Registrarse");
     }
-
+    
     [HttpPost]
     public IActionResult Login(string UserName, string Password)
     {
@@ -33,12 +22,13 @@ public class Account : Controller
 
         if (user != null)
         {
-            HttpContext.Session.SetInt32("UserId", user.idUsuario);
-            return RedirectToAction("IniciarSesion");
+            ViewBag.Error = "";            
+            return View("Index");
         }
         else
         {
-            return View("Index", new { Error = "El usuario o la contraseña son incorrectos." });
+            ViewBag.Error = "Usuario o contraseña incorrecta";
+            return View("IniciarSesion");
         }
     }
 

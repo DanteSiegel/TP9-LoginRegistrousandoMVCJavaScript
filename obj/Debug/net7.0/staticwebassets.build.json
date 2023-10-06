@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7aALTxONNLz6vDAGUQu7yDl34zzN0JAgkzsIWGVMHEc=",
+  "Hash": "7tdqIcr2RQoCl0+BjTlE1LAUEkIFVjEdz5TfBep8gzs=",
   "Source": "TP9",
   "BasePath": "_content/TP9",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\img\\Eye-icon.png",
+      "SourceId": "TP9",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\",
+      "BasePath": "_content/TP9",
+      "RelativePath": "img/Eye-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Eye-icon.png"
     },
     {
       "Identity": "E:\\Ort 2023\\Program2023\\TP9\\TP9-LoginRegistrousandoMVCJavaScript\\wwwroot\\js\\site.js",

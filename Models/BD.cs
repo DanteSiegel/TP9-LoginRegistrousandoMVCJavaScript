@@ -6,7 +6,7 @@ namespace TP9_LoginRegistrousandoMVCJavaScript.Models;
 
 public static class BD
 {
-    private static string ConnectionString = @"Server=localhost; DataBase=BaseDeDatos; Trusted_Connection=True";
+    private static string ConnectionString = @"Server=DESKTOP-E3OHN6P\SQLEXPRESS01; DataBase=BaseDeDatos; Trusted_Connection=True";
 
     public static void Registro(Usuario usuario)
     {
@@ -33,12 +33,11 @@ public static class BD
 
         public static Usuario ValidarLogIn(string UserName,string Contrasena)
     {
-         Usuario User = new Usuario();
-        string sql = "Select * from Usuario where UserName = "+ UserName +" and Contrasena = " + Contrasena +";";
-        
+        Usuario User = null;
+        string sql = "Select * from Usuario where UserName = @username and Contrasena = @contrasena;";
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
-            User = db.QueryFirst<Usuario>(sql);//aca
+            User = db.QueryFirstOrDefault<Usuario>(sql, new {username = UserName, contrasena = Contrasena});
         }
         return User;
 

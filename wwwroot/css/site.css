@@ -59,8 +59,23 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  position: relative;
 }
-
+.form-container .form-group .form-group-box
+{
+  display:flex;
+  flex-direction: column;
+}
+.form-container .form-group .form-group-box img
+{
+  width: 25px;
+}
+.form-container .form-group .form-group-box button
+{
+  background-color: #fff;
+  border: 1px solid #414141;
+  border-radius: 16px;
+}
 .form-container .form-group label {
   display: block;
   margin-bottom: 5px;

@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Registrarse";
+}
+
+<div class="container-form">
+  <div class="form-container">
+      <form class="form" action='@Url.Action("Index")'>
+        <div class="form-group">
+          <label for="UserName">Ingresar Usuario</label>
+          <input type="text" id="UserName" name="UserName" required="">
+        </div>
+        <div class="form-group" id="form-group">
+          <label for="Contrasena">Ingresar Contraseña</label>
+          <input type="password" id="Contrasena" name="Contrasena" required="">
+        </div>
+        <div class="form-group">
+          <label for="Nombre">Nombre</label>
+          <input type="text" id="Nombre" name="Nombre" required="">
+        </div>
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" id="Email" name="Email" required="">
+        </div>
+        <div class="form-group">
+          <label for="Telefono">Telefono</label>
+          <input type="tel" id="Telefono" name="Telefono" required="">
+        </div>
+        <button class="form-submit-btn" type="submit">Registrarse</button>
+      </form>
+  </div>
+</div>
