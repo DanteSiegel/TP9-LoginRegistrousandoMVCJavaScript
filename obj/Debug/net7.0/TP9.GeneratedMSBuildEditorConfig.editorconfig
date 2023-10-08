@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP9
 build_property.RootNamespace = TP9
-build_property.ProjectDir = e:\Ort 2023\Program2023\TP9\TP9-LoginRegistrousandoMVCJavaScript\
+build_property.ProjectDir = E:\Ort 2023\Program2023\TP9\TP9-LoginRegistrousandoMVCJavaScript\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = e:\Ort 2023\Program2023\TP9\TP9-LoginRegistrousandoMVCJavaScript
+build_property.MSBuildProjectDirectory = E:\Ort 2023\Program2023\TP9\TP9-LoginRegistrousandoMVCJavaScript
 build_property._RazorSourceGeneratorDebug = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Index.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/IniciarSesion.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/IniciarSesion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmljaWFyU2VzaW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/OlvideContraseña.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/OlvideContraseña.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxPbHZpZGVDb250cmFzZcOxYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Privacy.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Registrarse.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Account/Registrarse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/Error.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/_ViewImports.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/_ViewStart.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/_Layout.cshtml]
+[E:/Ort 2023/Program2023/TP9/TP9-LoginRegistrousandoMVCJavaScript/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5ks5mpszoe

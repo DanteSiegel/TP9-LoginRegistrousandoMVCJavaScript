@@ -12,7 +12,7 @@
         <div class="form-group">
           <label for="Contrasena">Ingresar Contraseña</label>
             <div class="contraseñaWButton">
-              <input type="password" class="text" id="Contrasena" name="Contrasena" required="">
+              <input type="password" class="text" id="Contrasena" name="Password" required="">
                 <div class="form-group-box">
                   <button type="button" onclick="verContra()">
                     <img src="/img/Eye-icon.png" alt="">
@@ -20,6 +20,7 @@
                 </div>
             </div>
         </div>
+        <p>@ViewBag.User</p>
         <p>@ViewBag.Error</p>
         <a href='@Url.Action("Registrarse")'>Registrarse</a>
         <button class="form-submit-btn" type="submit">Iniciar sesion</button>

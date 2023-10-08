@@ -6,12 +6,19 @@ namespace TP9.Controllers;
 
 public class Account : Controller
 {
+    public IActionResult Index()
+    {
+        ViewBag.aux = "Index";
+        return View();
+    }
     public IActionResult IniciarSesion()
     {
+        ViewBag.aux = "IniciarSesion";
         return View();
     }
     public IActionResult Registrarse()
     {
+        ViewBag.aux = "IniciarSesion";
         return View("Registrarse");
     }
     
@@ -19,14 +26,15 @@ public class Account : Controller
     public IActionResult Login(string UserName, string Password)
     {
         Usuario user = BD.ValidarLogIn(UserName, Password);
-
         if (user != null)
         {
-            ViewBag.Error = "";            
+            ViewBag.Error = "";
+            ViewBag.aux = "Index";       
             return View("Index");
         }
         else
         {
+            ViewBag.aux = "IniciarSesion";
             ViewBag.Error = "Usuario o contraseña incorrecta";
             return View("IniciarSesion");
         }
@@ -35,20 +43,27 @@ public class Account : Controller
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
-        return RedirectToAction("Index");
+        ViewBag.aux = "IniciarSesion";
+        return RedirectToAction("IniciarSesion");
     }
     
     [HttpPost]
     public IActionResult Register(Usuario usuario)
     {
 
-        if (!BD.ValidarRegistro(usuario.UserName))
+        if (BD.ValidarRegistro(usuario) == false)
         {
-            return View("Registro", new { Error = "El nombre de usuario ya está en uso." });
+            ViewBag.Error = "Usuario o contraseña incorrecta";
+            return View("Registrarse");
+        }
+        else
+        {
+            ViewBag.aux = "IniciarSesion";
+            BD.Registro(usuario);
+            return RedirectToAction("IniciarSesion");
         }
 
-        BD.Registro(usuario);
-        return RedirectToAction("IniciarSesion");
+        
     }
     
     [HttpPost]
@@ -58,12 +73,15 @@ public class Account : Controller
 
         if (user != null)
         {
+            ViewBag.aux = "Index";
             ViewBag.Contraseña = user.Contrasena;
             return RedirectToAction("Index");
         }
         else
         {
+            ViewBag.aux = "IniciarSesion";
             return View("ForgotPassword", new { Error = "El nombre de usuario no está registrado." });
         }
     }
 }
+

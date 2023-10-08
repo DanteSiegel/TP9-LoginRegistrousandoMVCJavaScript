@@ -4,14 +4,32 @@
 
 <div class="container-form">
   <div class="form-container">
-      <form class="form" action='@Url.Action("Index")'>
+      <form class="form" method="post" action='@Url.Action("Register")'>
         <div class="form-group">
           <label for="UserName">Ingresar Usuario</label>
           <input type="text" id="UserName" name="UserName" required="">
         </div>
         <div class="form-group" id="form-group">
-          <label for="Contrasena">Ingresar Contraseña</label>
-          <input type="password" id="Contrasena" name="Contrasena" required="">
+            <label for="Contrasena">Ingresar Contraseña</label>
+              <div class="contraseñaWButton">
+                <input type="password" class="text" id="Contrasena" name="Contrasena" required="">
+                <div class="form-group-box">
+                    <button type="button" onclick="verContra()">
+                      <img src="/img/Eye-icon.png" alt="">
+                    </button> 
+                  </div>
+              </div>
+        </div>
+        <div class="form-group" id="form-group">
+            <label for="Contrasena">Confirme La Contraseña</label>
+              <div class="contraseñaWButton">
+                <input type="password" class="text" id="Contrasena2" name="Contrasena" required="">
+                <div class="form-group-box">
+                    <button type="button" onclick="verContra2()">
+                      <img src="/img/Eye-icon.png" alt="">
+                    </button> 
+                  </div>
+              </div>
         </div>
         <div class="form-group">
           <label for="Nombre">Nombre</label>
@@ -23,8 +41,9 @@
         </div>
         <div class="form-group">
           <label for="Telefono">Telefono</label>
-          <input type="tel" id="Telefono" name="Telefono" required="">
+          <input type="tel" id="Telefono" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" name="Telefono" required="">
         </div>
+        <p>@ViewBag.Error</p>
         <button class="form-submit-btn" type="submit">Registrarse</button>
       </form>
   </div>
