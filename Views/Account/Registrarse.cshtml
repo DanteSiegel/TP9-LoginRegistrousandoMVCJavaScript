@@ -4,7 +4,7 @@
 
 <div class="container-form">
   <div class="form-container">
-      <form class="form" method="post" action='@Url.Action("Register")'>
+      <form class="form" method="post" action='@Url.Action("Register")' onsubmit="return(ValidarContrasena())">
         <div class="form-group">
           <label for="UserName">Ingresar Usuario</label>
           <input type="text" id="UserName" name="UserName" required="">
@@ -44,7 +44,10 @@
           <input type="tel" id="Telefono" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" name="Telefono" required="">
         </div>
         <p>@ViewBag.Error</p>
-        <button class="form-submit-btn" type="submit">Registrarse</button>
+        <button class="form-submit-btn" type="submit" >Registrarse</button>
       </form>
   </div>
 </div>
+
+<h4 id="passwordError"></h4>
+<h4 id="passwordError2"></h4>

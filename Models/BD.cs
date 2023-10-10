@@ -6,7 +6,7 @@ namespace TP9_LoginRegistrousandoMVCJavaScript.Models;
 
 public static class BD
 {
-    private static string ConnectionString = @"Server=DESKTOP-E3OHN6P\SQLEXPRESS01; DataBase=BaseDeDatos; Trusted_Connection=True";
+    private static string ConnectionString = @"Server=Localhost; DataBase=BaseDeDatos; Trusted_Connection=True";
 
     public static void Registro(Usuario usuario)
     {
@@ -25,7 +25,7 @@ public static class BD
         using(SqlConnection db = new SqlConnection(ConnectionString))
         {
                 
-                int Count = db.Query<Usuario>(sql,new{username = usuario.UserName, nombre = usuario.Email, pemail = usuario.Email, ptelefono = usuario.Telefono}).AsEnumerable().Count();
+                int Count = db.Query<Usuario>(sql,new{username = usuario.UserName, nombre = usuario.Email, email = usuario.Email, telefono = usuario.Telefono}).AsEnumerable().Count();
                 Valido = Count == 0;
         }
         return Valido;
