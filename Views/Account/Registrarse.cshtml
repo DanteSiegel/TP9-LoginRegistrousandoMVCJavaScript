@@ -4,7 +4,7 @@
 
 <div class="container-form">
   <div class="form-container">
-      <form class="form" method="post" action='@Url.Action("Register")' onsubmit="return(ValidarContrasena())">
+      <form class="form" method="post" action='@Url.Action("Register")' onsubmit="return validarFormulario()">
         <div class="form-group">
           <label for="UserName">Ingresar Usuario</label>
           <input type="text" id="UserName" name="UserName" required="">
@@ -41,13 +41,11 @@
         </div>
         <div class="form-group">
           <label for="Telefono">Telefono</label>
-          <input type="tel" id="Telefono" pattern="\([0-9]{3}\) [0-9]{3}[ -][0-9]{4}" name="Telefono" required="">
+          <input type="tel" id="Telefono" name="Telefono" placeholder="11 2222-3333" required="" > <!-- pattern="\([0-9]{2}\) [0-9]{4}[-][0-9]{4}" --> 
         </div>
-        <p>@ViewBag.Error</p>
-        <button class="form-submit-btn" type="submit" >Registrarse</button>
+        <p id="mensajeError" style="color: red;"></p>
+        <p style="color: red;">@ViewBag.Error</p>
+        <input type="submit" class="form-submit-btn" value="Registrar">
       </form>
   </div>
 </div>
-
-<h4 id="passwordError"></h4>
-<h4 id="passwordError2"></h4>

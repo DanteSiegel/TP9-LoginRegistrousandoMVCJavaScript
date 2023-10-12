@@ -21,6 +21,11 @@ public class Account : Controller
         ViewBag.aux = "IniciarSesion";
         return View("Registrarse");
     }
+
+    public IActionResult OlvidarContra()
+    {
+        return View("OlvideContrasena");
+    }
     
     [HttpPost]
     public IActionResult Login(string UserName, string Password)
@@ -53,7 +58,7 @@ public class Account : Controller
 
         if (BD.ValidarRegistro(usuario) == false)
         {
-            ViewBag.Error = "Usuario o contraseña incorrecta";
+            ViewBag.Error = "La cuenta ya existe";
             return View("Registrarse");
         }
         else
@@ -67,20 +72,22 @@ public class Account : Controller
     }
     
     [HttpPost]
-    public IActionResult ForgotPassword(string UserName)
+    public IActionResult ForgotPassword(Usuario usuario)
     {
-        Usuario user = BD.ObtenerContraseña(UserName);
+        Usuario user = BD.ObtenerContraseña(usuario);
 
         if (user != null)
         {
             ViewBag.aux = "Index";
-            ViewBag.Contraseña = user.Contrasena;
-            return RedirectToAction("Index");
+            ViewBag.Contrasena = usuario.Contrasena;
+            return View("OlvideContrasena");
         }
         else
         {
             ViewBag.aux = "IniciarSesion";
-            return View("ForgotPassword", new { Error = "El nombre de usuario no está registrado." });
+            ViewBag.Contrasena = "";
+            ViewBag.Error = "El nombre de usuario no está registrado.";
+            return View("OlvideContrasena");
         }
     }
 }
